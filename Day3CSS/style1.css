@@ -1,0 +1,79 @@
+/* 
+   boiler plate of css
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: botder-box;
+    }
+    html,body {
+        height: 100%;
+        width: 100%;
+    }
+
+*/
+@font-face {
+    font-family: name;
+    src: url(./fonts/motion-picture/MotionPicture_PersonalUseOnly.ttf);
+}
+
+@font-face {
+    font-family: use;
+    src: url(./fonts/NeueMachina-Regular_DQCmjH1st.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: pink;
+    background-color: royalblue;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font weight -> 100 to 900 */
+    font-weight: 600;   
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero {
+    color: rgb(17, 255, 0);
+    background-color: rgb(225, 65, 145);
+    font-size: 70px;
+    font-family: use;
+    /* font weight -> 100 to 900 */
+    font-weight: 600;   
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero1 {
+    text-align: center;
+}
+
+.lnct{
+    color: yellowgreen;
+    background-color: rgb(225, 65, 145);
+    font-size: 70px;
+    font-family: name;
+    /* font weight -> 100 to 900 */
+    font-weight: 600;   
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: magenta;
+    margin: 0 auto
+}
