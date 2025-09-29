@@ -1,0 +1,48 @@
+@font-face {
+    font-family: f1;
+    src: url('./fonts/NeueMachina-Regular_DQCmjH1st.ttf');
+}
+
+@font-face {
+    font-family: f2;
+    src: url('./fonts/Bubblegum.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/combined1.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* background-repeat: no-repeat; */
+}
+
+h1 {
+    color: lightgoldenrodyellow;
+    font-size: 100px;
+    font-family: f1;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family: f2;
+    padding: 10px 20px;
+    background-color: bisque;
+    border-radius: 50px;
+}

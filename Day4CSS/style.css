@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#one {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+#box1 {
+    height: 200px;
+    width: 200px;
+    /* background-color: crimson; */
+    /* background: linear-gradient(to bottom, red, blue, purple); */
+    /* diagonally and set amount*/
+    background: linear-gradient(to right bottom, red 40%, blue 60%);
+    margin: 50px;
+}
+
+/* radial gradient */
+#box2 {
+    height: 200px;
+    width: 200px;
+    /* background-color: crimson; */
+    /* background: linear-gradient(to bottom, red, blue, purple); */
+    /* diagonally and set amount*/
+    background: radial-gradient(red 40%, blue 60%);
+    margin: 50px;
+}
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(violet, indigo, blue, green, yellow, orange, red);
+    margin: 50px;
+}
+
+#outer {
+    height: 200px;   
+    width: 200px;
+    background-color: lightseagreen;
+    margin: 50px;
+}
+
+#inner {
+    /* % -> depends on parent */
+    height: 50%;
+    width: 50%;
+    background-color: lightblue;
+}
+
+.make {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.gradient-block {
+    margin: 20px;
+}
+
+
