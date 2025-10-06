@@ -1,0 +1,105 @@
+@font-face {
+    font-family: custom;
+    src: url('./fonts/helvetica-neue-5/HelveticaNeueLight.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: custom;
+    background-color: black;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#box1 {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;   /* red box moves up and the lightseagreen moves ahead and hides green box under red.  */
+    left: 400px;
+    top: 300px;
+    z-index: 9;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 10;
+}
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 11;
+}
+
+#box4 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(51% 0, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    top: 50%;
+    left: 50%;
+    background-color: blueviolet;
+    /* Make it center */
+    transform: translate(-50%, -50%);   
+}
+
+#parent {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+    overflow: auto;
+
+}
+
+#child1 {
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white; 
+}
+
+#child2 {
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    border: 3px solid white; 
+}
+
+#child3 {
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    border: 3px solid white; 
+}
+
+#child4 {
+    flex-shrink: 0;
+    height: 200px;
+    width: 200px;
+    background-color: tan;
+    border: 3px solid white; 
+}
