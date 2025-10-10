@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* h1 {
+    font-size: 60px;
+} */
+
+/* #box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+#inner {
+    height: 50%;
+    width: 50%;
+    background-color: lightseagreen;
+} */
+
+#box {
+    height: 30vh;
+    width: 30vw;
+    background-color: darkolivegreen;
+}
+
+h1 {
+    font-size: 10vmax;
+}
+
+.parent {
+    background-color: darkslategray;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 3em;   /* according to parents 3em -> 60px but in rem, 1 rem -> 16px and it is fixed  */
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.5em;
+}
+
