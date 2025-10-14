@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// html,body {
+//     height: 100%;
+//     width: 100%;
+//     font-size: 40px;
+// }
+
+body {
+    font-size: 50px;
+}
+
+main {
+    font-size: 100px;
+}
+
+section {
+    font-size: 200px;
+}
+/* pixels fixed */
+
+/* .red {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+} */
+
+.red {
+    height: 50vh;
+    width: 50vw;
+    /* 1vw = 5px */
+    /* 50vw = 250px */
+    background-color: red;
+}
+
+/* h1 {
+    font-size: 1rem;
+} */
+
+
+// h1 {
+//     font-size: 1em;
+// }
+
+// h2 {
+//     font-size: 1em;
+// }
+
+.red {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+
+    .blue {
+        height: 50%;  /* Takes 50 percent of parent heigth(400px) -> 200px */
+        width: 50%;  /* Takes 50 percent of parent heigth(400px) -> 200px  */
+        background-color: blue;
+    }
+}
+
+html {
+    // font-size: 1vw;
+
+    // set viewport = 1600
+    // 100vw: 1600px
+    // 1vw : 1600px
+
+    // set viewport = 1900
+    // 100vw: 1900px
+    // 1vw: 19px  (clamp stops because upper limit is 18px) if it reaches upper limit so it is stable at 18px.
+
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+h1 {
+    font-size: 10rem;
+}

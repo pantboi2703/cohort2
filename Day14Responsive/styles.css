@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 50px;
+}
+
+main {
+  font-size: 100px;
+}
+
+section {
+  font-size: 200px;
+}
+
+/* pixels fixed */
+/* .red {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+} */
+.red {
+  height: 50vh;
+  width: 50vw;
+  /* 1vw = 5px */
+  /* 50vw = 250px */
+  background-color: red;
+}
+
+/* h1 {
+    font-size: 1rem;
+} */
+.red {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+}
+.red .blue {
+  height: 50%; /* Takes 50 percent of parent heigth(400px) -> 200px */
+  width: 50%; /* Takes 50 percent of parent heigth(400px) -> 200px  */
+  background-color: blue;
+}
+
+html {
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+h1 {
+  font-size: 10rem;
+}/*# sourceMappingURL=styles.css.map */
