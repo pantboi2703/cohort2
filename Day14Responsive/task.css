@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30vw 3.3fr 3.3fr 3.3fr;
+  grid-template-rows: 32vw 1fr;
+  grid-template-areas: "left-side right-side right-side right-side" "left-side right-side-first right-side-second right-side-third";
+}
+main .left-side {
+  grid-area: left-side;
+  background-color: aqua;
+}
+main .right-side {
+  grid-area: right-side;
+  background-color: rosybrown;
+}
+main .right-side-first {
+  grid-area: right-side-first;
+  background-color: burlywood;
+}
+main .right-side-second {
+  grid-area: right-side-second;
+  background-color: navy;
+}
+main .right-side-third {
+  grid-area: right-side-third;
+  background-color: goldenrod;
+}/*# sourceMappingURL=task.css.map */
