@@ -54,21 +54,128 @@ if(number<0) {
 // }
 
 // trim():trim() remove spaces from first and last "    h  a    " ----> "h  a".(after trim)
-let age1 = prompt("Enter age:");
-if(age1 === null) {
-    console.error("You pressed cancel"); 
-} else {  // Take 35 space come this else if and trim so it is "" 
-    if((age1.trim()==="")) {
-    console.error("Please enter the age in the right way");
+
+// let age1 = prompt("Enter age:");
+// if(age1 === null) {
+//     console.error("You pressed cancel"); 
+// } else {  // Take 35 space come this else if and trim so it is "" 
+//     if((age1.trim()==="")) {
+//     console.error("Please enter the age in the right way");
+//     }
+//     else {
+//         age1 = Number(age1.trim());
+//         if(isNaN(age1)) {
+//             console.log("Please enter number");
+//         }
+//         else {
+//             console.log("Confirm it is a number");
+//         }
+//     }
+// } 
+
+// 7. Ask user's age and check if eligible to vote.
+// Hint: if age >= 18 "eligible" otherwise "not eligible".
+let age = prompt("Enter age: ");
+if(age === null) console.error("You cancelled it.");
+else {
+    if(age.trim() === "") {
+        console.error("Please write something.");
     }
     else {
-        age1 = Number(age1.trim());
-        if(isNaN(age1)) {
-            console.log("Please enter number");
+        age = Number(age);     // Number(harsh) => NaN.
+        if(isNaN(age)) {
+            console.error("Please enter a number.");
         }
         else {
-            console.log("Confirm it is a number");
+            // console.log(`your age is ${age}`);
+            if(age<=0) {
+                console.log("Invalid age");
+            }
+            else if(age>=18) {
+                console.log("You can vote.");
+            } else {
+                console.log("You can't vote.");
+            }
         }
     }
-
 } 
+
+// 8. Print multiplication table of 5.
+// Use loop to print 5 X 1 to 5 X 10.
+for(let i=1; i<=10; i++) {
+    console.log(`5 X ${i} = ${5*i}`);
+}
+
+// Print table of 38
+for(let i=1; i<=10; i++) {
+    console.log(`38 X ${i} = ${38*i}`)
+}
+
+// 9. Count how many numbers between 1 to 15 are greater than 8.
+//    Loop and count conditionally.
+let count = 0;
+for(let i=1; i<15; i++) {
+    if(i>8) count++;
+}
+console.log(count);
+
+// 10. Ask user for the password and tell that user get the access or not.
+let password = "123490";
+let pass = prompt("Enter the password: ");
+if(pass === null) {
+    console.log("You cancelled it");
+} else {
+    if(pass === password || pass.trim() === password) {
+        console.log("matched");
+    } else {
+        console.log("not matched");
+    }
+}
+
+// while loop: tab tak chalo jab tak condition true hai.
+/*
+     syntax of while: 
+     start 
+     while() {
+     .... /// your code 
+     change
+     }
+
+     Example: 
+     let i = 1;
+     while(i<11) {
+        console.log("Hello");
+        i++;
+     }
+*/
+
+// let password1 = "harsh";
+let pass1 = prompt("Enter the password:");
+while(pass1 != "stop") {
+    console.log(pass1);
+    pass1 = prompt("Enter the password:");
+}
+
+// -----------------------------  Level 2 ------------------------   // 
+// 11. Allow only 3 attempts to enter correct passowrds. 
+//     If user gets it right enter stop. If not -> "Account Locked".
+let attempts = 0;
+let khulgaya = false;
+let password1 = "mayank";
+
+let pass2 = prompt('Enter password:');
+attempts++;
+
+if (password1 === pass2) khulgaya = true;
+
+while(password1 != pass2) {
+    if(attempts === 3) {
+        console.error("Account locked");
+        break;
+    }
+    password1 = prompt("Enter password");
+    if(password1 === pass2) khulgaya = true;
+    attempts++;
+}
+
+if (khulgaya === true) console.log("account opened");
