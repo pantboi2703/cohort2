@@ -39,7 +39,7 @@ function parameters(a,b,c,d) {
 parameters();
 
 
-function topic(name, age) {   
+function topic({name, age}) {   
     // if you pass obj as a parameter you access it using obj.
     console.log(name, age);
 }
