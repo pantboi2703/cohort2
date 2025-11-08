@@ -199,3 +199,182 @@ const functions = [
 functions[0]();
 functions[1]();
 functions[2]();
+
+
+// --------------------------------------------
+// 🌟 REST OPERATOR Example
+// --------------------------------------------
+
+// The rest operator (...) is used in function parameters 
+// to collect all remaining arguments into a single array.
+// It helps when the number of arguments is unknown.
+
+let add = 0;
+
+function sum(...arr) {    // <-- '...arr' collects all arguments into an array
+    console.log(arr);     // Output: [1, 2, 3, 4, 5]
+    for (let i = 0; i < arr.length; i++) {
+        add += arr[i];    // Add each value from the array
+    }
+    return add;           // Return the total sum
+}
+
+let result = sum(1, 2, 3, 4, 5); // Passing multiple arguments
+console.log(result);              // Output: 15
+
+
+// --------------------------------------------
+// 🌟 SPREAD OPERATOR Example
+// --------------------------------------------
+
+// The spread operator (...) is used to expand (unpack) 
+// elements of an array or object into individual values.
+// It’s often used when passing array elements as arguments
+// to a function that expects separate parameters.
+
+function sum(a, b, c) {
+    console.log(a + b + c);
+}
+
+let arr2 = [1, 2, 3];
+
+// Here, '...arr' spreads the array into individual elements,
+// so it’s equivalent to calling sum(1, 2, 3)
+sum(...arr2); // Output: 6
+
+
+// -----------------Day 13------------------------  //
+
+// pure function ek aisha function
+// -> same input = same output
+// -> koi side effect naho hoga
+
+let abc = 12;
+function abcdef(val) {
+    console.log(val+2);
+}
+abcdef(12);
+abcdef(12);
+abcdef(12);
+abcdef(12);
+
+
+// impure function 
+// -> same input = different output ho sakta hai
+// -> Koi na koi side effect ho sakta hai.
+let ip = 12;
+function abcde(val) {
+    ip = Math.random() + val;
+    console.log(ip);
+}
+abcde(12);
+abcde(12);
+abcde(12);
+abcde(12);
+abcde(12);
+
+// Understanding Scoping in JS - ['Global scope', 'Function Scope']
+
+let ef = 12;  // global scope
+function understandScope() {
+    let df = 134;
+}
+// console.log(df); // error because of functional scope
+
+
+// Understanding 'Closures' and 'Scoping Rule':
+
+// closure: ek function hai jo return karta hai function but returning function jo hai wo parent  function ka koi variable use karega.
+// Note: Closure also a HOF.
+
+function closure() {
+    let ca = 12;
+    return function() {
+        console.log(ca);
+    }
+}
+
+
+// Arrays in JS and how to create an Array.
+// Understand how to accessing elements in Array.
+// Functions on Arrays - ['push', 'pop', 'shift', 'unshift', 'indexOf', 'array destructuring', 'filter', 'some', 'map', 'reduce', 'spread operator', 'slice', 'revrese', 'sort', 'join', 'toString' ].
+
+// arrays: 0 based indexing.
+let arr1 = [671, 902, 3534, 4534, 5675, 8996];
+
+// How to create an Array. 2 ways:
+let arr3 = [1,2,3,4];
+let arr4 = new Array();
+console.log(arr1);
+
+// push: push at last
+
+arr1.push(5);
+console.log(arr1);
+
+// pop: pop at last
+arr1.pop();
+console.log(arr1);
+
+// shift: remove one value at start
+arr1.shift();
+console.log(arr1);
+
+// unshift: add one value at start.
+arr1.unshift();
+console.log(arr1);
+
+// indexOf: give index of the element
+arr1.indexOf(4);
+
+// destructuring: 
+let [as, bs] = arr // if you give space after as so it skips index 1.
+
+
+// filter: used when you want to make a new Array from the old array which have some filter condition.
+
+let brr = [1,2,3,4];
+let brr2 = brr.filter(function(val) {
+    return val < 3;
+})
+
+// spread opeartor
+let brr3 = [1,2,3,4];
+let brr4 = [...brr3];
+
+// Iterating over Array using - ['For Loop', 'ForEach'].
+let crr = [1,2,3,4];
+crr.forEach(function(val) {
+    console.log(val);
+})
+
+// Understanding what are objects in JS - ['Key-value pair'].
+let obj = {
+    name: "Matre",
+    age: 23,
+    email: "matre123@male.com"
+};
+
+let obj2 = new Object();
+obj2 = {
+    name: "Maria",
+    age: 32
+}
+
+// Accessing
+console.log(obj.name);
+console.log(obj2['name']);
+
+// delete property of object.
+delete obj2.name;
+
+let obj3 = {
+    name: "Sourav",
+    socials: {
+        instagram: "mahem123",
+        facebook: "messy123"
+    }
+}
+
+
+
