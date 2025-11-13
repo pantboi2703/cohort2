@@ -72,8 +72,5 @@ var changeButton = document.getElementById('change');
 var image = document.querySelector('#card img'); // Corrected selector
 
 changeButton.addEventListener('click', () => {
-    // You can change the src to any other image path.
-    // I'm assuming you have another image, for example, 'tanjiro.jpg' in the same folder.
-    // If the current image is zenitsu, change to tanjiro, and vice-versa.
     image.src = "../Day4CSS/images/tomiaka.jpg";
 });
