@@ -1,0 +1,87 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+img {
+    height: 300px; 
+} 
+ */
+
+
+/* curson code */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #172227;
+}
+
+#cursor {
+    height: 20px;
+    position: fixed;          
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+h1 {
+    background-color: rgba(211, 211, 211, 0.208);
+    font-size: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
